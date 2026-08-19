@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Registration</title>
+</head>
+
+<body>
+
+    <h1>Visitor Registration Form</h1>
+
+    <form>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="date">Visit Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Visit Time:</label><br>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <label for="purpose">Purpose of Visit:</label><br>
+        <select id="purpose" name="purpose" required>
+            <option value="">Select Purpose</option>
+            <option value="meeting">Meeting</option>
+            <option value="interview">Interview</option>
+            <option value="delivery">Delivery</option>
+            <option value="personal">Personal Visit</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="person">Person to Meet:</label><br>
+        <input type="text" id="person" name="person" required><br><br>
+
+        <label for="message">Additional Information:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+        <button type="submit">Register Visitor</button>
+        <button type="reset">Clear</button>
+
+    </form>
+
+</body>
+</html>
