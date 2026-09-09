@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     background: linear-gradient(
+        135deg,
+        #4e6ae6,
+        #7642aa,
+        #af73b6
+    );
+}
+
+.container {
+    width: 350px;
+    padding: 40px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
