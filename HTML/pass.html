@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Visitor Pass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/pass.css">
+</head>
+<body>
+
+    <div class="pass-container">
+        <div class="top-nav no-print">
+            <a href="form.html" class="nav-btn"><i class="fa-solid fa-arrow-left"></i> New Registration</a>
+            <button onclick="window.print()" class="nav-btn print-btn"><i class="fa-solid fa-print"></i> Print Pass</button>
+        </div>
+        <div class="visitor-card" id="visitorCard">
+            <div id="loading" class="state-message">
+                <i class="fa-solid fa-circle-notch fa-spin"></i>
+                <p>Fetching Digital Visitor Pass...</p>
+            </div>
+            <div id="errorMessage" class="state-message hidden">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h3>Pass Not Found</h3>
+                <p id="errorText">Unable to retrieve visitor information.</p>
+                <a href="form.html" class="action-btn">Register New Visitor</a>
+            </div>
+            <div id="passContent" class="pass-content hidden">
+            
+                <div class="card-header">
+                    <div class="header-branding">
+                        <div class="college-logo">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h2>CAMPUS DIGITAL PASS</h2>
+                            <p class="college-name">College Visitor Access Permit</p>
+                        </div>
+                    </div>
+                    <div class="status-badge" id="statusBadge">Active</div>
+                </div>
+
+                <div class="card-body">
+                    <div class="visitor-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h1 class="visitor-name" id="displayVisitorName">--</h1>
+                    <p class="visitor-id-tag">ID: <span id="displayVisitorId">--</span></p>
+
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fa-solid fa-phone"></i> Mobile Number</span>
+                            <span class="detail-value" id="displayMobile">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fa-solid fa-envelope"></i> Email</span>
+                            <span class="detail-value" id="displayEmail">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fa-solid fa-bullseye"></i> Purpose</span>
+                            <span class="detail-value" id="displayPurpose">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fa-solid fa-user-tie"></i> Person to Meet</span>
+                            <span class="detail-value" id="displayPerson">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fa-solid fa-calendar-day"></i> Visit Date</span>
+                            <span class="detail-value" id="displayDate">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label"><i class="fa-solid fa-clock"></i> Entry Time</span>
+                            <span class="detail-value" id="displayTime">--</span>
+                        </div>
+                        <div class="detail-item full-width">
+                            <span class="detail-label"><i class="fa-solid fa-location-dot"></i> Visitor Address</span>
+                            <span class="detail-value" id="displayAddress">--</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <div class="qr-box">
+                        <img id="passQrCode" src="" alt="Visitor Pass Verification QR">
+                        <span>Scan for verification</span>
+                    </div>
+                    <div class="security-info">
+                        <p><i class="fa-solid fa-shield-halved"></i> Valid for single-day entry only.</p>
+                        <p>Must be presented at campus checkpoints when requested.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/pass.js"></script>
+</body>
+</html>
