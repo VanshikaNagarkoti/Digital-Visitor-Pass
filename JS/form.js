@@ -1,4 +1,5 @@
-console.log("form.js is connected");
+// console.log("form.js is connected");
+
 let visitors = [];
 
 document.querySelector("#visitorForm").addEventListener("submit", (event) => {
@@ -51,14 +52,14 @@ document.querySelector("#visitorForm").addEventListener("submit", (event) => {
 
         visitors.push(data);
 
+       
         localStorage.setItem(
             "currentVisitor",
             JSON.stringify(data)
         );
 
-        alert("Visitor Registered Successfully!");
-
-        document.querySelector("#visitorForm").reset();
+     
+        window.location.href = "pass.html";
 
     })
 
@@ -71,3 +72,4 @@ document.querySelector("#visitorForm").addEventListener("submit", (event) => {
     });
 
 });
+
