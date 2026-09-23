@@ -1,0 +1,47 @@
+body {
+    background-color: lightblue;
+}
+
+
+body {
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+form {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1b0b3a, #4b1f5c, #243b80);
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
