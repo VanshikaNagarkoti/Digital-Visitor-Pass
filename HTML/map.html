@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,46 +11,77 @@
 
     <link rel="stylesheet" href="../CSS/map.css">
 
-
 </head>
 
 <body>
 
-    <h1>My College</h1>
+    <div class="map-container">
 
-    <input
-        type="text"
-        class="search"
-        placeholder="Search college location..."
-    >
+        <h1>My College</h1>
 
-    <h2>College Locations</h2>
+        <p class="subtitle">
+            Find your desired location
+        </p>
 
-    <div class="locations">
 
-        <button class="location">
-             Block A
-        </button>
+        <input
+            type="text"
+            class="search"
+            placeholder="Search college location..."
+        >
 
-        <button class="location">
-             Block B
-        </button>
 
-        <button class="location">
-             Library
-        </button>
+        <h2>College Locations</h2>
 
-        <button class="location">
-             Cafeteria
-        </button>
 
-        <button class="location">
-            Main Gate
-        </button>
+        <div class="locations">
 
-        <button class="location">
-            Parking
-        </button>
+            <button class="location">
+                Block A
+            </button>
+
+            <button class="location">
+                Block B
+            </button>
+
+            <button class="location">
+                Library
+            </button>
+
+            <button class="location">
+                Cafeteria
+            </button>
+
+            <button class="location">
+                Main Gate
+            </button>
+
+            <button class="location">
+                Parking
+            </button>
+
+        </div>
+
+
+        <div class="navigation-buttons">
+
+            <!-- Refreshes the map page -->
+
+            <a href="map.html" class="new-location">
+                New Location
+            </a>
+
+
+            <!-- Deletes generated pass and opens Thank You page -->
+            <a
+                href="thankyou.html"
+                class="exit-button"
+                onclick="localStorage.removeItem('visitorPass');"
+            >
+                Exit
+            </a>
+
+        </div>
 
     </div>
 

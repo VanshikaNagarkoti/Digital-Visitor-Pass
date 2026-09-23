@@ -1,17 +1,44 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Visitor Registration QR</title>
+
+ <script src="../node_modules/qrcodejs/qrcode.min.js"></script>
     <link rel="stylesheet" href="../CSS/scanner.css">
 </head>
+
 <body>
+
     <div class="container">
-                <div class="text-box"> Scan The QR to Fill Your Details </div>
-    <div class="image">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=http://172.20.10.2:5500/Digital-Visitor-Pass/HTML/form.html" alt="">
-  </div>
-  </div>
+
+        <div class="text-box">
+            Scan The QR to Fill Your Details
+        </div>
+
+        <div id="qrcode"></div>
+
+    </div>
+
+
+    <script>
+
+        const formURL =
+        "http://localhost:5500/HTML/form.html";
+
+        // add your current ip where localhost is written to run the code on your pc
+
+        new QRCode(document.getElementById("qrcode"), {
+            text: formURL,
+            width: 250,
+            height: 250
+        });
+
+    </script>
+
 </body>
 </html>
