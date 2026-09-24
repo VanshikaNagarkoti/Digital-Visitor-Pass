@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: lightblue;
 }
@@ -44,4 +45,205 @@ h1 {
     text-align: center;
     color: white;
     margin-top: 30px;
+=======
+/* ================================
+   GENERAL STYLING
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+    min-height: 100vh;
+}
+
+
+/* ================================
+   HEADER / H1
+================================ */
+
+h1 {
+    background: linear-gradient(135deg, #174ea6, #4285f4);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+form {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ================================
+   LABELS
+================================ */
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+/* Input Focus */
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4285f4;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.15);
+}
+
+
+/* Placeholder */
+
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+
+/* ================================
+   SELECT
+================================ */
+
+select {
+    cursor: pointer;
+}
+
+
+/* ================================
+   TEXTAREA
+================================ */
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Register Button */
+
+button[type="submit"] {
+    background: #174ea6;
+    color: white;
+    margin-right: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #0d3b80;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(23, 78, 166, 0.3);
+}
+
+
+/* Clear Button */
+
+button[type="reset"] {
+    background: #e9ecef;
+    color: #333;
+}
+
+button[type="reset"]:hover {
+    background: #d5d9dd;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   SPACING
+================================ */
+
+br + br {
+    line-height: 10px;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 24px;
+        padding: 20px 10px;
+        margin-bottom: 25px;
+    }
+
+    form {
+        width: 94%;
+        padding: 25px 20px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+        margin-right: 0;
+    }
+>>>>>>> 3f7650c189c430079e3f3e6925f99a46740d699c
 }

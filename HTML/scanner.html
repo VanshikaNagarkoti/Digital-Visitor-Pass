@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visitor Registration QR</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <link rel="stylesheet" href="../CSS/scanner.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="text-box">
+            Scan The QR to Fill Your Details
+        </div>
+
+        <div id="qrcode"></div>
+
+    </div>
+
+    <script>
+
+        const formURL =
+        "http://192.168.1.101:5500/HTML/form.html";
+
+        new QRCode(document.getElementById("qrcode"), {
+            text: formURL,
+            width: 250,
+            height: 250
+        });
+
+    </script>
+
+</body>
+</html>
